@@ -5,8 +5,8 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "multilingual-analyze": "./dist/cli.mjs",
-    "mla": "./dist/cli.mjs"
+    "multilingual-analyze": "dist/cli.mjs",
+    "mla": "dist/cli.mjs"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
