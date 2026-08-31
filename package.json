@@ -1,6 +1,6 @@
 {
   "name": "multilingual-analyze",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "基于 AST 抽取的多语言分析工作台：支持 React/Vue，规则+LLM 分析 common，本地页面确认并翻译",
   "license": "MIT",
   "type": "module",
