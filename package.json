@@ -77,6 +77,8 @@
     "@ifreeovo/i18n-extract-cli": "^4.3.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
     "@tailwindcss/vite": "^4.1.12",
     "@types/babel__traverse": "^7.28.0",
     "@types/node": "^24.3.0",

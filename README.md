@@ -197,6 +197,39 @@ npm run dev:ui         # 前端，/api 代理到 5179
 npx mla serve -p 5179  # 起本地 API + 托管 ui/
 ```
 
+### Git 提交规范
+
+采用 [Conventional Commits](https://www.conventionalcommits.org/)，由 **Husky + commitlint** 在 `commit-msg` 阶段校验。
+
+```
+<type>(<scope>): <subject>
+```
+
+| type | 说明 |
+|------|------|
+| `feat` | 新功能 |
+| `fix` | 修复 bug |
+| `docs` | 文档 |
+| `style` | 代码格式（不影响逻辑） |
+| `refactor` | 重构 |
+| `perf` | 性能优化 |
+| `test` | 测试 |
+| `build` | 构建 / 依赖 |
+| `ci` | CI 配置 |
+| `chore` | 杂项维护 |
+| `revert` | 回滚 |
+
+示例：
+
+```bash
+git commit -m "feat(ui): 增加 AI 自动优化进度条"
+git commit -m "fix(extract): 修正 js 文件 SourceKind 标注"
+git commit -m "docs: 补充多 LLM provider 配置说明"
+```
+
+- `scope` 可选，建议：`cli` / `extract` / `ui` / `server` / `llm` / `ci`
+- `subject` 使用中文或英文均可，结尾不加句号，总长 ≤ 100 字符
+
 ## 发布到 npm
 
 包发布内容：`dist/`（CLI + 库）与 `ui/`（工作台静态资源）。
