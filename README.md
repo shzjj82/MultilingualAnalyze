@@ -184,9 +184,12 @@ cp mla.config.example.json mla.config.json
 ```bash
 git clone <repo>
 cd multilingual-analyze
-npm install
+npm install              # 自动执行 husky prepare，启用 pre-commit 检测
 npm run build          # CLI (pkgroll) + UI (Vite)
 npm run typecheck
+
+# 提交前会自动跑 typecheck（husky + lint-staged）；全量校验可用：
+npm run validate
 
 # 开发
 npm run dev            # 监听 CLI
