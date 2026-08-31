@@ -1,6 +1,6 @@
 node_modules/
 dist/
-ui/
+/ui/
 # shadcn 路径解析失败时可能误生成的字面量目录
 @/
 *.log

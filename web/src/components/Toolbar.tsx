@@ -62,7 +62,9 @@ export function Toolbar({
                   id={id}
                   checked={checked}
                   disabled={disabled}
-                  onCheckedChange={(state) => toggle(locale.value, state)}
+                  onCheckedChange={(state: boolean | 'indeterminate') =>
+                    toggle(locale.value, state)
+                  }
                 />
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-sm text-foreground">{name}</span>
