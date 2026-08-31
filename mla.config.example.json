@@ -1,0 +1,54 @@
+{
+  "input": "src",
+  "localePath": "./locales/zh_CN.json",
+  "workDir": ".mla",
+  "framework": "auto",
+  "engine": "builtin",
+  "templateStrategy": "split",
+  "sourceLocale": "zh_CN",
+  "port": 5179,
+  "llm": {
+    "provider": "deepseek",
+    "providers": {
+      "openai": {
+        "apiKey": "sk-xxx",
+        "baseUrl": "https://api.openai.com/v1",
+        "model": "gpt-4o-mini"
+      },
+      "deepseek": {
+        "apiKey": "sk-xxx",
+        "baseUrl": "https://api.deepseek.com/v1",
+        "model": "deepseek-chat"
+      },
+      "qwen": {
+        "apiKey": "sk-xxx",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "model": "qwen-plus"
+      },
+      "moonshot": {
+        "apiKey": "sk-xxx",
+        "baseUrl": "https://api.moonshot.cn/v1",
+        "model": "moonshot-v1-8k"
+      },
+      "zhipu": {
+        "apiKey": "sk-xxx",
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+        "model": "glm-4-flash"
+      },
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "model": "llama3.1"
+      },
+      "openrouter": {
+        "apiKey": "sk-xxx",
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "model": "openai/gpt-4o-mini"
+      },
+      "custom": {
+        "apiKey": "sk-xxx",
+        "baseUrl": "https://your-gateway.example/v1",
+        "model": "your-model"
+      }
+    }
+  }
+}

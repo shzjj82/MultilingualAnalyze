@@ -1,0 +1,15 @@
+node_modules/
+dist/
+ui/
+# shadcn 路径解析失败时可能误生成的字面量目录
+@/
+*.log
+.DS_Store
+.mla/
+locales/
+fixtures/locales/
+*.local.json
+.env
+.env.*
+# 本地配置可能含 API Key
+mla.config.json
